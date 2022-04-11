@@ -1,0 +1,4 @@
+[Settings]
+rows_num: 5
+columns_num: 5
+pattern_path: pattern.txt
