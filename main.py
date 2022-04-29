@@ -13,6 +13,10 @@ def main():
     with open(pattern_path, 'r') as f_pattern:
         pattern = [[int(num) for num in line.split(' ')] for line in f_pattern]
 
+    if columns_num < len(pattern) or rows_num < len(pattern[0]):
+        print("Dimensione del pattern non proporzionata alla matrice")
+        return
+
     choice = input("Scegli le opzioni:\n1) Genera una nuova matrice casuale \n2) Leggi la matrice dal file "
                    "/matrix.txt \n ")
 
